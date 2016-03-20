@@ -7,7 +7,7 @@ var path = require('path');
 
 // Definitions
 var app = express();
-var port = 3000;
+var port = process.argv[2];
 
 // Middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
