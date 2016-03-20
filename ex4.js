@@ -27,6 +27,7 @@ app.post('/form', function(req, res) {
     res.send(req.body.str.split('').reverse().join(''));
 });
 
+// SERVER
 app.listen(port, function() {
     console.log('Server running at http://localhost:' + port);
 });
