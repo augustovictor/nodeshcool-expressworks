@@ -6,7 +6,7 @@ var stylus = require('stylus');
 
 // DEFINITIONS
 var app = express();
-var port = 3000;
+var port = process.argv[2];
 
 // MIDDLEWARES
 app.use(stylus.middleware(__dirname + '/*.styl'));
